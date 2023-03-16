@@ -1,0 +1,22 @@
+print('Gerador de PA')
+print('-='*8)
+first_term = int(input('Primeiro termo: '))
+ratio = int(input('Razão da PA: '))
+c = 0
+result = 0
+while c < 10:
+    print(result, end=' ')
+    result+= ratio
+    c += 1
+print('PAUSA')
+c = 0
+t = True
+while t != 0:
+    t = int(input('Quantos termos você quer mostrar a mais?  '))
+    for i in range(0, t):
+        print(result, end=' ')
+        result+= ratio
+        c+= 1
+print('Progressão finalizada com {} termos mostrados'.format(c+10))
+
+#Digite 0 para cancelar a operação
